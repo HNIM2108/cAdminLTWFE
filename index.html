@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quản lý Kỳ thi</title>
+    
+</head>
+<body>
+    
+    <div id="app">
+        <!-- Form nhập thông tin kỳ thi -->
+        
+        <form id="examForm">
+            <div>    
+                <h1>Tạo, chỉnh sửa kỳ thi</h1>
+                <!-- Thông tin kỳ thi -->
+                <label for="examName">Tên kỳ thi:</label>
+                <input type="text" id="examName" required>
+
+                <label for="examDescription">Mô tả:</label>
+                <textarea id="examDescription" required></textarea>
+
+                <label for="examType">Loại kỳ thi:</label>
+                <select id="examType" required>
+                    <option value="free">Tự do</option>
+                    <option value="timed">Thời gian cụ thể</option>
+                </select>
+
+                <!-- Danh sách câu hỏi -->
+                <label for="questions">Danh sách câu hỏi:</label>
+                <ul id="questions"></ul>
+                <script src="scripts.js"></script>
+                <!-- Tính năng thêm, chỉnh sửa, xóa câu hỏi -->
+                <button type="button" onclick="addQuestion()">Thêm câu hỏi</button>
+                <button type="button" onclick="editQuestion()">Chỉnh sửa câu hỏi</button>
+                <button type="button" onclick="deleteQuestion()">Xóa câu hỏi</button>
+            </div>
+            <!-- Nút submit để lưu thông tin kỳ thi -->
+            <div id="luu"><button type="submit" onclick="saveInf()">Lưu thông tin kỳ thi</button></div>
+        </form>
+    </div>
+    
+</body>
+</html>

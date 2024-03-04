@@ -1,0 +1,66 @@
+
+body {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(to bottom right, white, red); */
+    background-color: rgb(206, 89, 89) ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+form {
+    width: 666px;
+    align-items: center;
+    background-color:bisque;
+    padding: 33px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+
+textarea {
+    height: 100px;
+    width: 500px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: aquamarine;
+    border-radius: 10px;
+}
+
+#app{
+    background-color:bisque;
+    width: 666px;
+    height:377px;
+    align-content: center;
+    border-left: 33px;
+    border-right: 33px;
+    border-radius: 20px;
+}
+
+ul{
+    display: block;
+    
+}
+#examName,#examType,label, textarea{
+    margin-left: 5px;
+    width: 300px; /* Độ rộng của khung nhập */
+    padding: 10px; /* Khoảng cách giữa nội dung và khung của khung nhập */
+    border: 1px solid #ccc; /* Viền của khung nhập */
+    border-radius: 10px; /* Độ bo tròn của góc khung nhập */
+}   
+
+h1{
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background-color: yellowgreen;
+    border-radius: 20px;
+}
